@@ -41,7 +41,7 @@ const initialState: IDriverState = {
   data: [],
 };
 
-export const clinicsSlice = createSlice({
+export const driverSlice = createSlice({
   name: "Drivers",
   initialState,
   reducers: {
@@ -70,6 +70,6 @@ export const clinicsSlice = createSlice({
   },
 });
 
-export const { setList, prevPage, nextPage, search } = clinicsSlice.actions;
+export const { setList, prevPage, nextPage, search } = driverSlice.actions;
 
-export default clinicsSlice.reducer;
+export default driverSlice.reducer;

@@ -6,7 +6,7 @@ import Header from "components/header";
 import Sidebar from "components/sidebar";
 import MainContent from "components/content";
 
-const Home: NextPage = () => {
+const Pickup: NextPage = () => {
   return (
     <div>
       <Head>
@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <Sidebar />
         <MainContent>
           <div style={{ justifyContent: "center", display: "flex" }}>
-            Welcome to dashboard Shipper.id
+            Coming Soon
           </div>
         </MainContent>
       </Container>
@@ -27,4 +27,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Pickup;

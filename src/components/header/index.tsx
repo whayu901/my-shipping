@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import { createUseStyles } from "react-jss";
 
 import Image from "next/image";
@@ -93,7 +93,7 @@ function Header({}: Props) {
 
       <button className={classes.headerProfile}>
         <span className={classes.headerGrettings}>Hello,</span>
-        <span className={classes.headerProfileName}> Shipper User</span>
+        <span className={classes.headerProfileName}>Shipper User</span>
         <span className={classes.headerProfileIcon}>
           <span className={classes.headerProfileSvg}>
             <User size={24} weight="fill" />
@@ -104,4 +104,4 @@ function Header({}: Props) {
   );
 }
 
-export default Header;
+export default memo(Header);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { createUseStyles } from "react-jss";
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -81,7 +81,7 @@ function Sidebar() {
             </a>
           </Link>
         </li>
-        <li className="">
+        <li style={{ marginTop: 10, marginBottom: 10 }}>
           <Link href={`/drivers`}>
             <a
               className={[
@@ -112,4 +112,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default memo(Sidebar);

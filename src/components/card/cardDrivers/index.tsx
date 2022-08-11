@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { createUseStyles } from "react-jss";
 
 import { DotsThree, UserCircle } from "phosphor-react";
@@ -135,4 +135,4 @@ function Sidebar({ data }: Props) {
   );
 }
 
-export default Sidebar;
+export default memo(Sidebar);
